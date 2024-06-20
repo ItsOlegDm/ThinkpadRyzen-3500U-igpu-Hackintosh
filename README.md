@@ -1,7 +1,7 @@
 # ThinkpadRyzen-3500U-igpu-Hackintosh
 Hackintosh Monterey/Ventura for Ryzen Thinkpad T495 laptop
 
-![image](https://github.com/kefrulz/ThinkpadRyzen-3500U-igpu-Hackintosh/assets/9220848/f760539f-fe7f-4be9-85af-c284438a6f6e)
+![tg_image_915704511](https://github.com/ItsOlegDm/ThinkpadRyzen-3500U-igpu-Hackintosh/assets/55553104/00198367-e95c-4f6f-aa2d-cc2631a0a466)
 
 
 ### An OpenCore config for Thinkpad T495 (Ryzen Edition) ###
@@ -13,57 +13,30 @@ I am also open to suggestions from all of you to improve MacOS on this laptop.
 For any troubleshooting please follow the great Dortania guide
 * https://dortania.github.io/OpenCore-Install-Guide/
 
-## OpenCore version: 0.9.6 ##
+## OpenCore version: 1.0.0 ##
 
-## macOS: 12.6.8 ##
+## MacOS: 14.5 ##
 
 ## SPECS: ##
 * LAPTOP: Thinkpad T495
 * CPU: AMD Ryzen 5 3500U
 * Display: AMD Radeon Vega 8 (Working on VRAM 2GB)
 * Network: Intel wireless 8265 / 8275
-* Hard-disk: Samsung 256 NVME
-* RAM: 16GB (8GB soldered + 8GB in slot)
-* Please change MLB/ROM/Serial Number/UUID.
+* SSD: KIOXIA ‎KBG40ZNS512G 512gb NVME
+* RAM: 16GB (soldered)
 
 ## WORKING: ##
-* Graphic Acceleration (using NootedRed.kext)
+* Graphics (using NootedRed.kext)
 * Network
+* Bluetooth
+* Touchscreen
 * Battery Status
 * Audio (AppleALC layout-id=11)
-
-## Installation instructions: ##
-* Download EFI from this repo
-* Download OCAT https://github.com/ic005k/OCAuxiliaryTools
-* Open Config in OCAT and go to PI(Platform Info) and generate a new System Product Name (This will generate all Paltform Info details for your new Hackintosh) and then Save (Don't worry about any errors in Validation, they show up since when you download OCAT it does not have latest OpenCore version attached. OPTIONAL: To solve this go to OCAT>Upgrade OpenCore and Kexts and press on Get latest version of Opencore) Then Save.
-![Screenshot 2023-12-02 at 15 41 34](https://github.com/kefrulz/ThinkpadRyzen-3500U-igpu-Hackintosh/assets/9220848/471792f2-9f5e-431a-8b43-b05c5318fbfe)
-* Download Open Core Legacy Patcher on another working MAC
-* Download Monterey/Ventura
-* Create the USB installer (skip installing of OCLP Efi)
-* Download https://github.com/benbaker76/EFI-Agent to mount the EFI
-* Paste the EFI from this repo inside a EFI Folder (Structure should be EFI>EFI>(OC and OC folders)
-* Boot from USB
-* Select Monterey/Ventura installer (DMG)
-* Follow Setup
-* Format Disk as APFS - GUID (if you have issues, just format first to ExFAT - MBR and then to APFS - GUID)
-* Install MACOS Monterey/Ventura
-* Boot again from USB - Select MACOS installer
-* Do this as many times needed until the Disk name you selected earlier when formatting appeares
-* Enjoy your Hackintosh :)
-
-## Post Install: ##
-* Download EFI Agent to mount the EFI
-* Copy the EFI folder from the USB drive / Download again from here to the Disk EFI
-
-
-## Bios settings: ##
-* Enable Secure boot
+* Sleep mode (lidwake needs to be disabled)
 
 
 ## Not working yet: ##
 * Hibernation
-* Bluetooth
-* USB Map (not sure 100% if i made it right- i am still learning)
 * you tell me :)
 
 Happy Hackintoshing :)
