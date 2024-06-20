@@ -15,7 +15,7 @@ For any troubleshooting please follow the great Dortania guide
 
 ## OpenCore version: 1.0.0 ##
 
-## MacOS: 14.5 ##
+## MacOS: 13.6.3 ##
 
 ## SPECS: ##
 * LAPTOP: Thinkpad T495
